@@ -7,7 +7,7 @@ Created on Thu Nov 19 11:20:56 2020
 import json
 Grafo = False
 
-with open ("Arbol.json","r") as read_file:
+with open ("arbol.json","r") as read_file:
     data = json.load(read_file)
     Grafo = data['Arbol']
 
@@ -23,7 +23,7 @@ def buscar(i, num):
             if res:
                 return res
     recorrido.pop()
-res = buscar("15","30")
+res = buscar("9","13")
 
 if res:
     print("Numero encontrado")

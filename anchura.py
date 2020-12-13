@@ -7,7 +7,7 @@ Created on Wed Nov 18 01:19:11 2020
 import json
 Grafo = False
 
-with open ("Arbol.json","r") as read_file:
+with open ("arbol.json","r") as read_file:
     data = json.load(read_file)
     Arbol = data['Arbol']
 
@@ -28,7 +28,7 @@ def agregar(i):
         if b==i:
             fin.append(a)
  
-res,c=buscar("9","5",1)
+res,c=buscar("15","15",1)
 
 if res:
     print("Número encontrado")
