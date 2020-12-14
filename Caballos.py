@@ -69,7 +69,7 @@ def movimientos(data,caballo,llaves,movim):
     if 0 in llaves:
         movim = [0,0,0,0]
         tab = reseteartablero(tab)
-        return caballos(data,caballo,llaves,movim)
+        return movimientos(data,caballo,llaves,movim)
     else:
         return solucion(caballo)
 
