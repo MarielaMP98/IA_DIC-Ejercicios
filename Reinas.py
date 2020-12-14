@@ -28,7 +28,6 @@ def inicio(reinas, Mat, valor,posiciones):
                             posicion.append([i,r])
 
         Mat = iterar(Mat,posicion)
-
         posicion.pop(0)
         for i in Mat:
             if 0 in i:
@@ -44,9 +43,8 @@ def inicio(reinas, Mat, valor,posiciones):
             return inicio(reinas,contened,valor,posiciones)
         if valor == 0:
             print(valor)
-            reinas=num_reinas-1
+            reinas=reinas-1
             return inicio(reinas,Mat,valor,posiciones)
-
 def iterar(Mat,posicion):
     a = posicion[0][0]
     b = posicion[0][1]
@@ -97,7 +95,6 @@ def iterar(Mat,posicion):
     Mat[a][b]=1
     imp(Mat)
     return Mat
-    
 
 def res(Mat):
     for i in range(len(Mat)):
